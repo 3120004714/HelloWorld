@@ -1,0 +1,5 @@
+org\ggxian\papercheck\pojo\Paper.class
+org\ggxian\papercheck\util\FileUtil.class
+org\ggxian\papercheck\component\EnterNullException.class
+org\ggxian\papercheck\Main.class
+org\ggxian\papercheck\util\CalculatorUtil.class
