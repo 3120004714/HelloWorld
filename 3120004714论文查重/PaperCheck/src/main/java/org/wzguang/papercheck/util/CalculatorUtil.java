@@ -11,7 +11,7 @@ public final class CalculatorUtil {
      * @param modifiedText 抄袭版论文文本
      */
     public static void calculate(Paper originText, Paper modifiedText){
-        int sum = modifiedText.getSentence().length();
+        int sum = originText.getSentence().length();
         String origin = " " + originText.getSentence();
         String modification = " " + modifiedText.getSentence();
         //设置字符串长度,具体大小可自行设置

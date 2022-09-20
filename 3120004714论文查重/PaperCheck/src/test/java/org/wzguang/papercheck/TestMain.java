@@ -10,7 +10,7 @@ public class TestMain {
     @Test
     public void testForOriginalArticleNull(){
 //        Assert.assertThrows()
-        Main.main(new String[]{null,"D:\\测试文件\\orig_0.8_add.txt","D:\\测试文件\\查重结果.txt"});
+        Main.main1("D:\\测试文件\\orig_0.8_add.txt","D:\\测试文件\\查重结果.txt",null);
     }
 
 
@@ -19,7 +19,7 @@ public class TestMain {
      */
     @Test
     public void testForPlagiarismArticleNull(){
-        Main.main(new String[]{"D:\\测试文件\\orig.txt",null,"D:\\测试文件\\查重结果.txt"});
+        Main.main1("D:\\测试文件\\orig.txt",null,"D:\\测试文件\\查重结果.txt");
     }
 
     /**
@@ -27,7 +27,7 @@ public class TestMain {
      */
     @Test
     public void testForResultNull(){
-        Main.main(new String[]{"D:\\测试文件\\orig.txt","D:\\测试文件\\orig_0.8_add.txt",null});
+        Main.main1("D:\\测试文件\\orig.txt","D:\\测试文件\\orig_0.8_add.txt",null);
     }
 
 
@@ -36,7 +36,7 @@ public class TestMain {
      */
     @Test
     public void testForNotExistFile(){
-        Main.main(new String[]{"D:\\测试文件\\orig.txt","D:\\测试文件\\不存在.txt","D:\\测试文件\\查重结果.txt",});
+        Main.main1("D:\\测试文件\\orig.txt","D:\\测试文件\\不存在.txt","D:\\测试文件\\查重结果.txt");
     }
 
 

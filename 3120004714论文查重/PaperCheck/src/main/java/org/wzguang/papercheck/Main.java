@@ -42,12 +42,7 @@ public class Main {
         Paper originalText = FileUtil.readFromFile(A);
         Paper modifiedText = FileUtil.readFromFile(B);
         CalculatorUtil.calculate(originalText, modifiedText);
-        result = "***********************************************\n" +
-                "论文总字数：" + modifiedText.getSum() + "\n" +
-                "论文重复字数：" + modifiedText.getRepetition() + "\n" +
-                "论文重复率：" + getPercentFormat(modifiedText.getRepetitionRate()) + "\n" +
-                "查重时间用了" + (double)(System.currentTimeMillis() - before)/1000 + "秒\n" +
-                "***********************************************\n\n";
+        result = getPercentFormat(modifiedText.getRepetitionRate()) +"\n";
         FileUtil.writeInFile(C, result);
     }
 }
